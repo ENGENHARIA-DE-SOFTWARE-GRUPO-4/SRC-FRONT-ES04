@@ -11,10 +11,10 @@ const Menu = () =>{
                 </div>
 
                 <div class="containerDados">
-                    <div class="dados">
-                        <p>Nome:</p>
-                        <p>Período:</p>
-                    </div>
+                    
+                    <p>Nome:</p>
+                    <p>Período:</p>
+                    
                 </div>
 
                 </div>
