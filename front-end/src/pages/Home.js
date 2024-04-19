@@ -1,7 +1,7 @@
 import React from "react";
-import '../styles/Menu.css'
+import '../styles/Home.css'
 
-const Menu = () =>{
+const Home = () =>{
     return(
         <div>  
             <div class="totalContainer">
@@ -11,10 +11,8 @@ const Menu = () =>{
                 </div>
 
                 <div class="containerDados">
-                    
                     <p>Nome:</p>
                     <p>Período:</p>
-                    
                 </div>
 
                 </div>
@@ -37,4 +35,4 @@ const Menu = () =>{
     );
 }
 
-export default Menu;
+export default Home;
