@@ -1,6 +1,7 @@
 import {Routes, Route} from 'react-router-dom'
 import LoginPage from './pages/LoginPage'
 import Home from './pages/Home';
+import Logout from './pages/Logout';
 //adicionar as rotas aqui!
 function App() {
   return(
@@ -9,6 +10,7 @@ function App() {
       <Route path = "login" element={<LoginPage />}/>
       <Route path = "home" element={<Home />}/>
       <Route path = "*" element={<Home />}/>
+      <Route path = "logout" element={<Logout />}/>
     </Routes> 
     </> 
   );
