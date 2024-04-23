@@ -1,0 +1,25 @@
+@import '../../../styles.scss';
+
+.minhas_infos_page {
+    @include page_format;
+
+    .minhas_infos {
+        h2 {
+            font-size: 3em;
+        }
+        text-align: center;
+    
+    }
+    .minhas_infos_buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 50vw;
+        margin-top: 2vh;
+        color: white;
+        font-weight: bold;
+    }
+
+    #guri {
+        margin-top: 4vh;
+    }
+}

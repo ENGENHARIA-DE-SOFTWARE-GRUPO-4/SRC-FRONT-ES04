@@ -1,0 +1,40 @@
+@import "assets";
+@import "mixins";
+@import "reset";
+@import "_typography";
+
+:root {
+  font-size: 18px;
+}
+
+@media (max-width: 1600px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1080px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1440px) and (max-height: 700px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+

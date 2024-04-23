@@ -1,0 +1,20 @@
+<main class="main">
+    <section class="navbar">
+        <div class="navbar_avatar"></div>
+        <div class="navbar_user">
+            <div class="navbar_user_infos">
+                <span>Nome: </span>
+                <span>Período: </span>
+            </div>
+        </div>
+    </section>
+    <section class="cards_container">
+        <div class="card" *ngFor="let menu of options_menu">
+            <app-card 
+            [title_card]="menu.title" 
+            [route]="menu.route"
+            >
+        </app-card>
+        </div>
+    </section>
+</main>
