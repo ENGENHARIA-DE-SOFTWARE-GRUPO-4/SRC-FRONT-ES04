@@ -11,6 +11,7 @@ import { SalasComponent } from './pages/salas/salas.component';
 import { LogoutComponent } from './pages/logout/logout.component';
 import { DisciplinasComponent } from './pages/disciplinas/disciplinas.component';
 import { HorasComponent } from './pages/horas/horas.component';
+import { MinhasHorasComponent } from './pages/minhas-horas/minhas-horas.component';
 
 const routes: Routes = [
   {
@@ -61,6 +62,10 @@ const routes: Routes = [
   {
     path: 'horas',
     component: HorasComponent
+  },
+  {
+    path: 'minhasHoras',
+    component: MinhasHorasComponent
   }
     
 ]

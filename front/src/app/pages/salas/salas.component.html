@@ -1,1 +1,22 @@
-<p>salas works!</p>
+<section class="create_sala_page">
+    <div class="create_sala_header"> 
+        <h2>SALAS VIRTUAIS</h2>
+    </div>
+    <section class="create_sala_container">
+        <div class="create_sala_form_wrapper">
+            <form action="">
+                <app-input [text]="'Nome da sala:'" [name]="'create_space'" [type]="'text'"></app-input>
+                <app-input [text]="'Disciplina associada:'" [name]="'associated_discipline'" [type]="'text'"></app-input>
+                <app-input [text]="'Data da chamada:'" [name]="'meeting_date'" [type]="'date'"></app-input>
+                <app-input [text]="'Tópico:'" [name]="'subject'" [type]="'text'"></app-input>
+                <button type="submit">Criar sala</button>
+            </form>
+        </div>
+        <div class="enter_sala_container">
+            <h2>Já sabe que sala deseja entrar?</h2>
+            <h2>Digite o seu código!</h2>
+            <app-input [name]="'create_space'" [type]="'text'"></app-input> 
+            <img src="../../../assets/icons/pincel.svg" alt="" id="lapis">
+        </div>
+    </section>
+</section>

@@ -12,6 +12,7 @@ import { ForumComponent } from './forum/forum.component';
 import { LogoutComponent } from './logout/logout.component';
 import { DisciplinasComponent } from './disciplinas/disciplinas.component';
 import { HorasComponent } from './horas/horas.component';
+import { MinhasHorasComponent } from './minhas-horas/minhas-horas.component';
 
 
 
@@ -27,7 +28,8 @@ import { HorasComponent } from './horas/horas.component';
     ForumComponent,
     LogoutComponent,
     DisciplinasComponent,
-    HorasComponent
+    HorasComponent,
+    MinhasHorasComponent
   ],
   imports: [
     CommonModule,
@@ -36,7 +38,16 @@ import { HorasComponent } from './horas/horas.component';
   exports: [
     HomeComponent,
     LoginComponent,
-    RegisterComponent 
+    RegisterComponent,
+    AgendaComponent,
+    SalasComponent,
+    MinhasInfosComponent,
+    CalendarioComponent,
+    ForumComponent,
+    LogoutComponent,
+    DisciplinasComponent,
+    HorasComponent,
+    MinhasHorasComponent
   ]
 })
 export class PagesModule { }

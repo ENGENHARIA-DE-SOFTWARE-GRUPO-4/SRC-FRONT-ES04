@@ -1,1 +1,25 @@
-<p>horas works!</p>
+<main class="horas_page">
+    <div class="horas_header">
+        <img src="../../../assets/icons/horas.svg" alt="">
+        <h2>HORAS COMPLEMENTARES</h2>
+    </div>
+    <section class="horas_wrapper_form">
+        <h3 class="horas_wrapper_title">Adicionar horas complementares</h3>
+        <section  class="horas_form_container">
+            <div class="horas_form">
+                <form action="" >
+                   <app-input [text]="'Titulo'" [type]="'text'" [name]="'title'"></app-input>
+                   <app-input [text]="'Horas'" [type]="'number'" [name]="'hours'"></app-input>
+                    <app-select [title]="'Tipo'"></app-select>
+                    <button class="horas_submit_btn">Cadastrar</button>
+                </form>
+            </div>
+            <div>
+                <button class="horas_cadastradas_btn" (click)="goToMyHours()">
+                    Minhas horas cadastradas
+                </button>
+            </div>
+        </section>
+    </section>
+
+</main>

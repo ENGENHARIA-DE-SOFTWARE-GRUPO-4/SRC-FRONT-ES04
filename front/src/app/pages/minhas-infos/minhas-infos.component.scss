@@ -1,4 +1,4 @@
-@import '../../../styles.scss';
+@import 'global';
 
 .minhas_infos_page {
     @include page_format;
@@ -17,6 +17,14 @@
         margin-top: 2vh;
         color: white;
         font-weight: bold;
+
+        button {
+            @include button;
+            width: 14vw;
+            height: 6vh;
+            background-color: $blue;
+            color: white;
+        }
     }
 
     #guri {

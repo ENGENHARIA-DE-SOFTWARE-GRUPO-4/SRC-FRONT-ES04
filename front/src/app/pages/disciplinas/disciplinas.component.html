@@ -1,1 +1,33 @@
-<p>disciplinas works!</p>
+<main class="disciplinas_page">
+        <h2 class="disciplinas_page_title">
+            <img src="../../../assets/icons/maca.svg" alt="">
+            MINHAS DISCIPLINAS
+        </h2>
+    <section class="disciplinas_table_container">
+        <table class="disciplinas_table">
+            <tr>
+                <th>Disciplina</th>
+                <th>Nota 1</th>
+                <th>Nota 4</th>
+                <th>Nota 3</th>
+                <th>Média</th>
+            </tr>
+            <tr *ngFor="let disciplina of disciplinas">
+                <td>{{ disciplina.name }}</td>
+                <td>{{ disciplina.nota1 }}</td>
+                <td>{{ disciplina.nota2 }}</td>
+                <td>{{ disciplina.nota3 }}</td>
+                <td>{{ disciplina.media }}</td>
+                <td>{{ disciplina.creditos }}</td>
+                <td (click)="goToDisciplina(disciplina.name)">-></td>
+            </tr>
+        </table>
+        <div class="disciplinas_footer_container">
+            <div class="disciplinas_footer_progress">
+                <h2>Meu progresso em disciplinas</h2>
+                <div></div>
+            </div>
+            <button (click)="registerDisciplina()">Adicionar disciplina</button>
+        </div>
+    </section>
+</main>

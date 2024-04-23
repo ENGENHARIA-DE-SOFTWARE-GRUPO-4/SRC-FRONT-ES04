@@ -1,0 +1,22 @@
+@import 'global';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+
+    .span {
+        margin-bottom: 1vh;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"] {
+    background-color : $grey; 
+    border: none;
+    height: 5vh;
+    width: 26vw;
+
+  }
+  
+}
