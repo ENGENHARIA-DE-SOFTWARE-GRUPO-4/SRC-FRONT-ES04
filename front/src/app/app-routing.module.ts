@@ -12,6 +12,7 @@ import { LogoutComponent } from './pages/logout/logout.component';
 import { DisciplinasComponent } from './pages/disciplinas/disciplinas.component';
 import { HorasComponent } from './pages/horas/horas.component';
 import { MinhasHorasComponent } from './pages/minhas-horas/minhas-horas.component';
+import { DisciplinaComponent } from './pages/disciplina/disciplina.component';
 
 const routes: Routes = [
   {
@@ -66,6 +67,10 @@ const routes: Routes = [
   {
     path: 'minhasHoras',
     component: MinhasHorasComponent
+  },
+  {
+    path: 'disciplina',
+    component: DisciplinaComponent
   }
     
 ]

@@ -1,0 +1,45 @@
+<main>
+    <div>
+        <h2>{{ disciplina_title }}</h2>
+    </div>
+     <section>
+        <h2>Cadastrar notas</h2>
+        <div>
+            <span>Inicialmente, é necessário cadastrar o peso de cada nota</span>
+            <app-input [text]="'nota 1 peso '"></app-input>
+            <app-input [text]="'nota 2 peso '"></app-input>
+            <app-input [text]="'nota 3 peso '"></app-input>
+        </div>
+
+        <div>
+            <div>
+                <app-input></app-input>
+                <app-input></app-input>
+                <app-input></app-input>
+            </div>
+        </div>
+     </section>
+     <section>
+        <h2>Cadastrar faltas</h2>
+        <div>
+            <app-input></app-input>
+            <app-input></app-input>
+            <app-select></app-select>
+            <button></button>
+        </div>
+
+        <div>
+            <h2>Minhas faltas</h2>
+            <table>
+                <tr>
+                    <th>Data</th>
+                    <th>Quantidade</th>
+                    <th>Justificativa</th>
+                </tr>
+                <tr>
+                    <td *ngFor="let falta of faltas"></td>
+                </tr>
+            </table>
+        </div>
+     </section>
+</main>

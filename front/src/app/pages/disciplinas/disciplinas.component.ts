@@ -59,7 +59,6 @@ export class DisciplinasComponent {
 
   goToDisciplina(disciplina_name: string) {
     this.router.navigate(['disciplina'], { 
-      relativeTo: this.route,
       state: {
         ...window.history.state,
         disciplina: disciplina_name
@@ -68,6 +67,6 @@ export class DisciplinasComponent {
   }
 
   registerDisciplina() {
-    
+
   }
 }

@@ -13,6 +13,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { DisciplinasComponent } from './disciplinas/disciplinas.component';
 import { HorasComponent } from './horas/horas.component';
 import { MinhasHorasComponent } from './minhas-horas/minhas-horas.component';
+import { DisciplinaComponent } from './disciplina/disciplina.component';
 
 
 
@@ -29,7 +30,8 @@ import { MinhasHorasComponent } from './minhas-horas/minhas-horas.component';
     LogoutComponent,
     DisciplinasComponent,
     HorasComponent,
-    MinhasHorasComponent
+    MinhasHorasComponent,
+    DisciplinaComponent
   ],
   imports: [
     CommonModule,
