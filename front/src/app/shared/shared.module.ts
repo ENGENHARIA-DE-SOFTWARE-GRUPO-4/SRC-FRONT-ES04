@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CardComponent } from './card/card.component';
 import { InputComponent } from './input/input.component';
 import { SelectComponent } from './select/select.component';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -10,7 +11,8 @@ import { SelectComponent } from './select/select.component';
   declarations: [
     CardComponent,
     InputComponent,
-    SelectComponent
+    SelectComponent,
+    HeaderComponent
   ],
   imports: [
     CommonModule
@@ -18,8 +20,8 @@ import { SelectComponent } from './select/select.component';
   exports: [
     CardComponent,
     InputComponent,
-    SelectComponent
-
+    SelectComponent,
+    HeaderComponent
   ]
 })
 export class SharedModule { }

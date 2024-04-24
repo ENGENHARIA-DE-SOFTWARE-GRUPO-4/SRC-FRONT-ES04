@@ -1,2 +1,142 @@
 @import 'global';
 
+.disciplina_page {
+    @include page_format;
+    flex-direction: column;
+
+    .disciplina_header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+
+        h2 {
+            @include main_title;
+            margin-right: 36vw;
+
+        }
+
+        .back {
+            margin-left: 10vw;
+            cursor: pointer;
+        }
+    }
+
+    .disciplina_container {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .disciplina_notas_container,
+        .disciplina_faltas_container {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                font-size: 1.5em;
+                margin-top: 3vh;
+            }
+
+            .disciplinas_notas_pesos {
+                display: flex;
+                flex-direction: column;
+                margin-top: 2vh;
+
+                button {
+                    @include button;
+                    width: 30%;
+                    height: 6vh;
+                    margin-top: 3vh;
+                    background-color: $blue;
+                    color: $white;
+                }
+            }
+
+            .disciplinas_notas_pesos_inputs {
+                display: flex;
+                margin-top: 2vh;
+                justify-content: space-between;
+                width: 70%;
+            }
+
+            .disciplinas_notas {
+                width: 70%;
+                margin-top: 3vh;
+            }
+
+            .disciplinas_notas_cadastro {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 50%;
+
+                app-select {
+                    width: 30%;
+                }
+
+                button {
+                    @include button;
+                    width: 30%;
+                    height: 60%;
+                    background-color: $green;
+                }
+            }
+
+            .disciplinas_notas_inputs {
+                display: flex;
+                margin-top: 2vh;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+
+        .disciplina_faltas_cadastro {
+            margin-top: 6vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            app-select {
+                width: 30%;
+            }
+            button {
+                @include button;
+                width: 30%;
+                height: 80%;
+                background-color: $blue;
+                color: $white;
+                margin-top: 3vh;
+            }
+        }
+
+        .disciplinas_faltas_table_container {
+            margin-top: 5vh;
+            height: 50%;
+
+            .disciplinas_faltas_table {
+                width: 100%;
+                height: 80%;
+                background-color: rgba(74,133,246,.4);
+            
+                text-align: center;
+
+                th {
+                    font-weight: bold;
+                    padding-top: 4vh;
+                }
+                td {
+                    font-weight: lighter;
+                    border-top: 1px solid;
+                    border-bottom: 1px solid;
+                    padding-top: 3vh;
+                }
+            }
+        }
+    }
+}

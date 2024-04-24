@@ -4,8 +4,20 @@
     @include page_format;
     flex-direction: column;
 
-    .disciplinas_page_title {
-        @include main_title;
+    .disciplinas_page_header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .back {
+            margin-left: 10vw;
+            cursor: pointer;
+        }
+        .disciplinas_page_title {
+            @include main_title;
+            margin-right: 36vw;
+        }
     }
 
     .disciplinas_table_container {

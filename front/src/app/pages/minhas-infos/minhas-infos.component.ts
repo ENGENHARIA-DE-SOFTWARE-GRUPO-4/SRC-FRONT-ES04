@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -8,12 +9,15 @@ import { Router } from '@angular/router';
 })
 export class MinhasInfosComponent {
 
-  constructor(private router: Router){}
+  constructor(private router: Router, private location: Location){}
 
   goToDisciplinas() {
     this.router.navigate(['disciplinas'])
   }
   goToHoras() {
     this.router.navigate(['horas'])
+  }
+  goBack() {
+    this.location.back()
   }
 }

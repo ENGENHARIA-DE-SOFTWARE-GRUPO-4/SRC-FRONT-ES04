@@ -4,9 +4,23 @@
     @include page_format;
 
     .minhas_infos {
-        h2 {
-            font-size: 3em;
+        
+
+        .minhas_infos_header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .back {
+                cursor: pointer;
+            }
+            h2 {
+                font-size: 3em;
+                margin-right: 16vw;
+            }
         }
+
+        
         text-align: center;
     
     }

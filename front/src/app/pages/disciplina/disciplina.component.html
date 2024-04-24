@@ -1,45 +1,63 @@
-<main>
-    <div>
-        <h2>{{ disciplina_title }}</h2>
+<main class="disciplina_page">
+    <div class="disciplina_header">
+        <div class="back" (click)="goBack()"><-</div>
+        <h2>
+            <img src="../../../assets/icons/maca.svg" alt="">
+            {{ disciplina_title }}
+        </h2>
     </div>
-     <section>
-        <h2>Cadastrar notas</h2>
-        <div>
-            <span>Inicialmente, é necessário cadastrar o peso de cada nota</span>
-            <app-input [text]="'nota 1 peso '"></app-input>
-            <app-input [text]="'nota 2 peso '"></app-input>
-            <app-input [text]="'nota 3 peso '"></app-input>
-        </div>
-
-        <div>
-            <div>
-                <app-input></app-input>
-                <app-input></app-input>
-                <app-input></app-input>
+    <div class="disciplina_container">
+        <section class="disciplina_notas_container">
+            <h2>Cadastrar notas</h2>
+            <div class="disciplinas_notas_pesos" *ngIf="neverRegister">
+                <span>Inicialmente, é necessário cadastrar o peso de cada nota</span>
+                <div class="disciplinas_notas_pesos_inputs">
+                    <app-input [text]="'nota 1 peso '" [type]="'number'" ></app-input>
+                    <app-input [text]="'nota 2 peso '" [type]="'number'"></app-input>
+                    <app-input [text]="'nota 3 peso '" [type]="'number'"></app-input>
+                </div>
+                <button>Cadastrar</button>
             </div>
-        </div>
-     </section>
-     <section>
-        <h2>Cadastrar faltas</h2>
-        <div>
-            <app-input></app-input>
-            <app-input></app-input>
-            <app-select></app-select>
-            <button></button>
-        </div>
-
-        <div>
-            <h2>Minhas faltas</h2>
-            <table>
-                <tr>
-                    <th>Data</th>
-                    <th>Quantidade</th>
-                    <th>Justificativa</th>
-                </tr>
-                <tr>
-                    <td *ngFor="let falta of faltas"></td>
-                </tr>
-            </table>
-        </div>
-     </section>
+    
+            <div class="disciplinas_notas" *ngIf="!neverRegister">
+                <span>Cadastre a nota e a referência a qual estágio ela é</span>
+                <div class="disciplinas_notas_cadastro">
+                    <app-input [text]="'nota'" [type]="'number'"></app-input>
+                    <app-select [options]="estagios"></app-select>
+                    <button>Cadastrar</button>
+                </div>
+                <div class="disciplinas_notas_inputs">
+                    <app-input [text]="'nota 1'" [type]="'number'" ></app-input>
+                    <app-input [text]="'nota 2'" [type]="'number'"></app-input>
+                    <app-input [text]="'nota 3'" [type]="'number'" ></app-input>
+                </div>
+            </div>
+         </section>
+         <section class="disciplina_faltas_container">
+            <h2>Cadastrar faltas</h2>
+            <div class="disciplina_faltas_cadastro">
+                <app-input [text]="'Data'" [type]="'date'"></app-input>
+                <app-input [text]="'Quantidade'" [type]="'number'"></app-input>
+                <app-select [options]="options_justificativa"></app-select>
+                <button>Cadastrar</button>
+            </div>
+    
+            <div class="disciplinas_faltas_table_container">
+                <h2>Minhas faltas</h2>
+                <table class="disciplinas_faltas_table">
+                    <tr>
+                        <th>Data</th>
+                        <th>Quantidade</th>
+                        <th>Justificativa</th>
+                    </tr>
+                    <tr *ngFor="let falta of faltas">
+                        <td>{{falta.data}}</td>
+                        <td>{{falta.quantidade}}</td>
+                        <td>{{falta.justificativa}}</td>
+                    </tr>
+                </table>
+            </div>
+         </section>
+    </div>
+     
 </main>

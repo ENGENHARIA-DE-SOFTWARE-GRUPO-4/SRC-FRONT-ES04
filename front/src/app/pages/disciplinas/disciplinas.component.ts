@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -10,7 +11,7 @@ export class DisciplinasComponent {
 
   constructor(
     private router: Router,
-    private route: ActivatedRoute
+    private location: Location
     ){}
 
   disciplinas = [
@@ -68,5 +69,9 @@ export class DisciplinasComponent {
 
   registerDisciplina() {
 
+  }
+
+  goBack() {
+    this.location.back()
   }
 }

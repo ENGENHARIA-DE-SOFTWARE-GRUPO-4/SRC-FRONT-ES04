@@ -5,8 +5,18 @@
     flex-direction: column;
 
     .create_sala_header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .back{
+            cursor: pointer;
+            margin-left: 10vw;
+        }
         h2 {
             @include main_title;
+            margin-right: 34vw;;
         }
     }
 
