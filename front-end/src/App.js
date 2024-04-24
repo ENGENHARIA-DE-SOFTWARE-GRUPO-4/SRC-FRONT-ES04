@@ -3,6 +3,7 @@ import LoginPage from './pages/LoginPage'
 import Home from './pages/Home';
 import Logout from './pages/Logout';
 import Progress from './pages/Progress';
+import MySubjectsPage from './pages/MySubjectsPage';
 //adicionar as rotas aqui!
 function App() {
   return(
@@ -13,6 +14,7 @@ function App() {
       <Route path = "*" element={<Home />}/>
       <Route path = "logout" element={<Logout />}/>
       <Route path = "progress" element={<Progress />}/>
+      <Route path = "mySubjects" element={<MySubjectsPage />}/>
     </Routes> 
     </> 
   );
