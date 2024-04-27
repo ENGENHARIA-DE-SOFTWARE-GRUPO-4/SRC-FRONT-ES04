@@ -14,6 +14,7 @@ import { DisciplinasComponent } from './disciplinas/disciplinas.component';
 import { HorasComponent } from './horas/horas.component';
 import { MinhasHorasComponent } from './minhas-horas/minhas-horas.component';
 import { DisciplinaComponent } from './disciplina/disciplina.component';
+import { NovoEventoComponent } from './agenda/novo-evento/novo-evento.component';
 
 
 
@@ -31,7 +32,8 @@ import { DisciplinaComponent } from './disciplina/disciplina.component';
     DisciplinasComponent,
     HorasComponent,
     MinhasHorasComponent,
-    DisciplinaComponent
+    DisciplinaComponent,
+    NovoEventoComponent
   ],
   imports: [
     CommonModule,

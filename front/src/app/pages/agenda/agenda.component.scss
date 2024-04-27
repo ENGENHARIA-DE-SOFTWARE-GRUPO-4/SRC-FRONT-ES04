@@ -1,0 +1,75 @@
+@import 'global';
+
+.agenda_page {
+    @include page_format;
+    flex-direction: column;
+
+    .agenda_page_header {
+        width: 80%;
+        height: 30%;
+        text-align: center;
+        h2 {
+            @include main_title;
+            margin-bottom: 4vh;
+
+            img {
+                width: 15%
+            }
+        }
+    }
+
+    .agenda_buttons_wrapper {
+        display: flex;
+        justify-content: space-between;
+        height: 10%;
+
+
+        button {
+            @include button;
+            height: 100%;
+        }
+        .agenda_data_wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+
+            button {
+                background-color: $blue;
+                color: $white;
+                width: 25%;
+            }
+
+        }
+
+        .agenda_add_novo_evento_btn {
+            background-color: $green;
+            color: $white;
+            width: 30%;
+        }
+    }
+
+    .agenda_events_wrapper {
+        width: 90%;
+        height: 50%;
+    }
+
+    .agenda_events_table {
+        background-color: rgba(74,133,246,.4);
+            width: 100%;
+            height: 80%;
+            text-align: center;
+
+            th {
+                font-weight: bold;
+                padding-top: 4vh;
+            }
+            td {
+                font-weight: lighter;
+                border-top: 1px solid;
+                border-bottom: 1px solid;
+                padding-top: 3vh;
+                cursor: pointer;
+            }
+    }
+    
+}

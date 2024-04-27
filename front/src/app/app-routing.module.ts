@@ -13,6 +13,7 @@ import { DisciplinasComponent } from './pages/disciplinas/disciplinas.component'
 import { HorasComponent } from './pages/horas/horas.component';
 import { MinhasHorasComponent } from './pages/minhas-horas/minhas-horas.component';
 import { DisciplinaComponent } from './pages/disciplina/disciplina.component';
+import { NovoEventoComponent } from './pages/agenda/novo-evento/novo-evento.component';
 
 const routes: Routes = [
   {
@@ -71,6 +72,10 @@ const routes: Routes = [
   {
     path: 'disciplina',
     component: DisciplinaComponent
+  },
+  {
+    path: 'novo-evento',
+    component: NovoEventoComponent
   }
     
 ]

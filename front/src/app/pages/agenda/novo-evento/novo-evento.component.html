@@ -1,0 +1,26 @@
+<main class="new_event_page">
+    <div class="new_event_header">
+        <h2>Adicionar Evento</h2>
+    </div>
+    <section class="new_event_wrapper">
+        <img src="../../../../assets/icons/agenda.svg" alt="" id="teste">
+        <section class="new_event_register">
+            <form action="" class="new_event_register_form">
+                <div class="register_form_row1">
+                    <app-input [text]="'Início:'" [name]="'begin'" [type]="'text'"></app-input>
+                    <app-input [text]="'Término:'" [name]="'end'" [type]="'text'"></app-input>
+                </div>
+                <div class="register_form_row2">
+                    <app-input [text]="'Horário Inicial:'" [name]="'time-begin'" [type]="'text'"></app-input>
+                    <app-input [text]="'Horário Final:'" [name]="'time-end'" [type]="'text'"></app-input>
+                </div>
+                <div class="register_form_row3">
+                    <app-input [text]="'Tópico'" [name]="'topic'" [type]="'text'"></app-input>
+                </div>
+                <textarea placeholder="Detalhe aqui a sua atividade que será registrada..."></textarea>
+                <button type="submit">Criar</button>
+            </form>
+        </section>
+
+    </section>
+</main>

@@ -1,0 +1,59 @@
+@import 'global';
+
+.new_event_page {
+    @include page_format;
+    flex-direction: column;
+
+    .new_event_header {
+        @include main_title;
+    }
+
+    #teste {
+        width: 30%;
+    }
+
+    .new_event_wrapper {
+        width: 90%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .new_event_register {
+            width: 50%;
+        }
+
+        .new_event_register_form {            
+            .register_form_row1,
+            .register_form_row2 {
+                display: flex;
+                gap: 1vw;
+                app-input {
+                    width: 50%;
+                }
+            }
+
+            .register_form_row3 {
+                width: 100%;
+            }
+
+            textarea {
+                background-color : $grey; 
+                border: none;
+                height: 20vh;
+                width: 100%;
+                margin-top: 2vh;
+            }
+
+            button {
+                @include button;
+                width: 20%;
+                height: 4vh;
+                margin-top: 2vh;
+                background-color: $blue;
+                color: $white;
+            }
+        }
+    }
+}
