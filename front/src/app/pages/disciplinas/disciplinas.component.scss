@@ -1,4 +1,4 @@
-@import 'global';
+@import '../../../assets/scss/global.scss';
 
 .disciplinas_page {
     @include page_format;
@@ -42,7 +42,7 @@
                 padding-top: 3vh;
                 cursor: pointer;
             }
-            
+
         }
     }
 

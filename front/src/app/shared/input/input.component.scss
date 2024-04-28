@@ -1,4 +1,4 @@
-@import 'global';
+@import '../../../assets/scss/global.scss';
 
 .container {
     display: flex;
@@ -12,10 +12,10 @@
     input[type="text"],
     input[type="number"],
     input[type="date"] {
-    background-color : $grey; 
+    background-color : $grey;
     border: none;
     height: 5vh;
     width: 100%;
   }
-  
+
 }

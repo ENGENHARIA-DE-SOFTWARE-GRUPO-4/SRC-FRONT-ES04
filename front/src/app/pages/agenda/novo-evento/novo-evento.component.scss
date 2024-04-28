@@ -1,4 +1,4 @@
-@import 'global';
+@import '../../../../assets/scss/global.scss';
 
 .new_event_page {
     @include page_format;
@@ -24,7 +24,7 @@
             width: 50%;
         }
 
-        .new_event_register_form {            
+        .new_event_register_form {
             .register_form_row1,
             .register_form_row2 {
                 display: flex;
@@ -39,7 +39,7 @@
             }
 
             textarea {
-                background-color : $grey; 
+                background-color : $grey;
                 border: none;
                 height: 20vh;
                 width: 100%;

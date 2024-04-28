@@ -1,10 +1,10 @@
-@import 'global';
+@import '../../../assets/scss/global.scss';
 
 .minhas_infos_page {
     @include page_format;
 
     .minhas_infos {
-        
+
 
         .minhas_infos_header {
             width: 100%;
@@ -20,9 +20,9 @@
             }
         }
 
-        
+
         text-align: center;
-    
+
     }
     .minhas_infos_buttons {
         display: flex;

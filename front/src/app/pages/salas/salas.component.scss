@@ -1,4 +1,4 @@
-@import 'global';
+@import '../../../assets/scss/global.scss';
 
 .create_sala_page {
     @include page_format;
@@ -70,5 +70,5 @@
         }
     }
 
-    
+
 }

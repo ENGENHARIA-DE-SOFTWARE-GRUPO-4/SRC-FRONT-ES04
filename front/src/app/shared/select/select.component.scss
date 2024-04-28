@@ -1,4 +1,21 @@
-@import 'global';
+@import '../../../assets/scss/global.scss';
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    font-weight: bold;
+    margin-bottom: 2vh;
+  }
+
+  select {
+    border: none;
+    height: 6vh;
+    background-color: $grey;
+  }
+}
 
 
 .container {

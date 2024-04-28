@@ -1,4 +1,4 @@
-@import 'global';
+@import '../../../assets/scss/global.scss';
 
 .horas_page {
     @include page_format;
@@ -60,7 +60,7 @@
                 background-color: $blue;
                 color: $white;
             }
-          
+
         }
     }
 }
