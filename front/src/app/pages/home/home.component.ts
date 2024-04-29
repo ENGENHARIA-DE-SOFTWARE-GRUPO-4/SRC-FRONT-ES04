@@ -8,28 +8,28 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 
   options_menu = [
-    { 
-      title: "Meu progresso", 
+    {
+      title: "Meu progresso",
       route: '/minhasInfos'
     },
-    { 
-      title: "Minha agenda", 
+    {
+      title: "Minha agenda",
       route: '/agenda'
     },
-    { 
-      title: "Meu calendário", 
+    {
+      title: "Meu calendário",
       route: '/calendario'
     },
-    { 
-      title: "Fórum Online", 
+    {
+      title: "Fórum Online",
       route: '/forum'
     },
-    { 
-      title: "Salas virtuais", 
+    {
+      title: "Salas virtuais",
       route: '/salas'
     },
-    { 
-      title: "Sair", 
+    {
+      title: "Sair",
       route: '/logout'
     }
   ]
