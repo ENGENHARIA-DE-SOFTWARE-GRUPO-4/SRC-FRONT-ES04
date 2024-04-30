@@ -5,18 +5,18 @@
     </div>
     <section class="create_sala_container">
         <div class="create_sala_form_wrapper">
-            <form action="">
-                <app-input [text]="'Nome da sala:'" [name]="'create_space'" [type]="'text'"></app-input>
-                <app-input [text]="'Disciplina associada:'" [name]="'associated_discipline'" [type]="'text'"></app-input>
-                <app-input [text]="'Data da chamada:'" [name]="'meeting_date'" [type]="'date'"></app-input>
-                <app-input [text]="'Tópico:'" [name]="'subject'" [type]="'text'"></app-input>
+            <form [formGroup]="createMeetingForm" (ngSubmit)="onSubmit()">
+                <input text="Nome da sala:" name="'nameSpace'" type="text" formControlName="nameSpace" required/>
+                <input text="Disciplina associada:" name="course" type="text" formControlName="course" required/>
+                <input text="Data da chamada:" name="date" type="date" formControlName="date" required/>
+                <input text="Tópico:" name="subject" type="text" formControlName="subject" required/>
                 <button type="submit">Criar sala</button>
             </form>
         </div>
         <div class="enter_sala_container">
             <h2>Já sabe que sala deseja entrar?</h2>
             <h2>Digite o seu código!</h2>
-            <app-input [name]="'create_space'" [type]="'text'"></app-input> 
+            <input name="create_space" [type]="'text'"/>
             <img src="../../../assets/icons/pincel.svg" alt="" id="lapis">
         </div>
     </section>
