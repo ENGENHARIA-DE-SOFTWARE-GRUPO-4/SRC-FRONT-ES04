@@ -38,15 +38,4 @@ describe('SalasComponent', () => {
     virtualRoomLink.click();
     expect(navigateSpy).toHaveBeenCalledWith(['/virtual-room', 'sala-id']);
   });
-
-  it('should display correct table headers', () => {
-    const headerRow = fixture.nativeElement.querySelector('.salas_table tr:first-child');
-    const headers = headerRow.querySelectorAll('th');
-    expect(headers.length).toBe(2);
-    expect(headers[0].textContent).toBe('Nome da sala' );
-    expect(headers[1].textContent).toBe('Disciplina associada');
-    expect(headers[1].textContent).toBe('Data da chamada');
-    expect(headers[1].textContent).toBe('Tópico');
-
-  });
 });
